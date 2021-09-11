@@ -1,0 +1,894 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Холявушка - Форум</title>
+
+
+<link type="text/css" rel="StyleSheet" href="index_pliki/971.css">
+
+	<link rel="stylesheet" href="index_pliki/base.css">
+	<link rel="stylesheet" href="index_pliki/layer1.css">
+
+	<script async="" src="index_pliki/tag.js"></script><script src="index_pliki/jquery-3.js"></script>
+	
+	<script src="index_pliki/uwnd.js"></script>
+	<script src="index_pliki/uutils_002.fcg"></script>
+<script>/* --- UCOZ-JS-INIT_CODE --- */
+	window.ulb = {photoPage:"Перейти на страницу с фотографией.", closeBtn:"Закрыть", error:"Запрошенный контент не может быть загружен. Пожалуйста, попробуйте позже.", next:"Следующий", prev:"Предыдущий", btnPlay:"Начать слайдшоу", btnToggle:"Изменить размер", };
+var umoder_panel_params = {confirm_activate:'Вы действительно хотите активировать данный материал?', confirm_delete:'Вы подтверждаете удаление?', ssid:'7kI7Eg7Q', };
+/* --- UCOZ-JS-END --- */</script>
+
+	<link rel="stylesheet" href="index_pliki/ulightbox.css">
+	<link rel="stylesheet" href="index_pliki/moder_panel_new.css">
+	<link rel="stylesheet" href="index_pliki/social.css">
+	<script src="index_pliki/ulightbox.js"></script>
+	<script src="index_pliki/moder_scripts.js"></script>
+	<script>
+/* --- UCOZ-JS-DATA --- */
+window.uCoz = {"language":"ru","ssid":"7kI7Eg7Q","site":{"id":"obream2008","host":"bream2008.narod.ru","domain":null}};
+/* --- UCOZ-JS-CODE --- */
+
+	function Insert(qmid, user, text) {
+		user = user.replace(/\[/g, '\\[').replace(/\]/g, '\\]');
+		if (!!text) {
+			qmid = qmid.replace(/[^0-9]/g, "");
+			paste("[quote="+user+";"+qmid+"]"+text+"[/quote]\n", 0);
+		} else {
+			_uWnd.alert('Выделите текст для цитирования', '', {w:230, h:80, tm:3000});
+		}
+	}
+
+	function paste(text, flag) {
+		if (document.selection && flag) {
+			document.addform.message.focus();
+			document.addform.document.selection.createRange().text = text;
+		} else {
+			document.addform.message.value += text;
+		}
+	}
+
+	function get_selection() {
+		if (window.getSelection) {
+			selection = window.getSelection().toString();
+		} else if (document.getSelection) {
+			selection = document.getSelection();
+		} else {
+			selection = document.selection.createRange().text;
+		}
+	}
+
+	function pdel(id, n) {
+		if (confirm('Вы подтверждаете удаление?')) {
+			(window.pDelBut = document.getElementById('dbo' + id))
+				&& (pDelBut.width = pDelBut.height = 13) && (pDelBut.src = '/.s/img/ma/m/i2.gif');
+			_uPostForm('', {url:'/forum/22-1-' + id + '-8-0-7kI7Eg7Q', 't_pid': n});
+		}
+	}
+ function uSocialLogin(t) {
+			var params = {"yandex":{"width":870,"height":515},"ok":{"height":390,"width":710},"google":{"height":600,"width":700},"facebook":{"width":950,"height":520},"vkontakte":{"height":400,"width":790}};
+			var ref = escape(location.protocol + '//' + ('bream2008.narod.ru' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' ))));
+			window.open('/'+t+'?ref='+ref,'conwin','width='+params[t].width+',height='+params[t].height+',status=1,resizable=1,left='+parseInt((screen.availWidth/2)-(params[t].width/2))+',top='+parseInt((screen.availHeight/2)-(params[t].height/2)-20)+'screenX='+parseInt((screen.availWidth/2)-(params[t].width/2))+',screenY='+parseInt((screen.availHeight/2)-(params[t].height/2)-20));
+			return false;
+		}
+/* --- UCOZ-JS-END --- */
+</script>
+
+	<style>.UhideBlockL{display:none; }</style>
+</head>
+
+<body style="background-color:#FFFFFF; margin:0;padding:0;">
+<div>
+	<!--style-->
+	<link href="index_pliki/uadm.css" rel="stylesheet" type="text/css">
+	<!--style-->
+
+	<script type="text/javascript">
+		function achgroup(v){document.cookie = "obream2008uz47="+escape(v)+";path=/;"; window.location.reload();}
+		function descustf(v){document.cookie = "obream2008uz48="+escape(v)+";path=/;"; window.location.reload();}
+	</script>
+	 <!-- $ds_js libs from uCoz (for constructor mode) -->
+	<div id="uzGrid" style="display:none;"><div style="position:fixed; width:100%; text-align:center; padding-top:250px;"><img alt="" src="index_pliki/i3.gif" style="border:0;width:220px;height:19px;"></div></div> <!-- uzgrid -->
+
+	<!--[if lte IE 9]>
+	<script src="/.s/src/IE9.js"></script>
+	<![endif]-->
+	<!--[if !IE]><!-->
+	<script>
+		var isIE = window.navigator.msPointerEnabled;
+		if (isIE ) {
+			document.addEventListener('DOMContentLoaded', function() {
+				var uadm = document.getElementsByClassName("uadm");
+				var uadmAvatar = document.getElementsByClassName("uadm-avatar");
+				var uadmToggle = document.getElementsByClassName("uadm-toggle");
+				var uadmL = document.getElementsByClassName("uadm-l");
+				var uadmWidth = uadmL[0].offsetWidth + uadmAvatar[0].offsetWidth + uadmToggle[0].offsetWidth;
+				document.documentElement.className += ' ie10-11';
+				if (!uadm[0].classList.contains("uadm--vertical") ) {
+					uadm[0].style.width = uadmWidth + 'px';
+				}
+			});
+		}
+	</script>
+	<!--<![endif]-->
+
+	<div id="uAdminBar" class="uadm uadm--animate uadm--mini"> <!-- also bar color and location settings (first option - color, second - orientation, third - location 1 option, third - location 2 option, fifth - admbar mini option, sixth - hidden type, seventh - fixed position) -->
+		<!--uadm-profile-->
+		<div class="uadm-profile uadm-iparent">
+			<i class="uadm-iparent-ico icouAdm-user">
+				<span class="uadm-count"></span>
+			</i>
+			<a href="javascript://" class="uadm-avatar "><span><img src="index_pliki/AOh14GgNG0-PR0_QZJ1HYv1d1r1jQ_VsKAjVga0AV09Bs96-c.png" alt=""> <!-- avatar --></span></a>
+			<div class="uadm-subl uadm-profile-menu">
+				 <!-- nick update -->
+				 <!-- fill opts -->
+				 <!-- verify email -->
+				<div class="uadm-subi">
+					<a href="javascript://" rel="nofollow" onclick="window.open('/index/8', 'upp', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"> <!-- personal page link -->
+						<i class="icouAdm-business-card"></i>
+						<span>Мой профиль на сайте</span>
+					</a>
+				</div>
+				<div class="uadm-subi">
+					<span onclick="new _uWnd('Cab','Цвет всплывающих окон',180,150,{align:'',autosize:1,closeonesc:1,min:0,max:0},{url:'/index/42'});">
+						<i class="icouAdm-business-card"></i>
+						<span>Цвет всплывающих окон&nbsp;&nbsp;<img src="index_pliki/sample.gif"></span>
+					</span>
+				</div>
+				<div class="uadm-subi"><a href="https://3530936099.uid.me/" target="_blank"><i class="icouAdm-me"></i><span>Моя визитка uID.me</span></a></div> <!-- uid profile -->
+				<div class="uadm-subi"><a href="http://bream2008.narod.ru/index/15-1" target="_blank"><i class="icouAdm-user"></i><span>Пользователи сайта</span></a></div> <!-- list of site users -->
+				<div class="uadm-subi"><a href="http://bream2008.narod.ru/index/10"><i class="icouAdm-exit"></i><span>Выход с сайта</span></a></div> <!-- site exit -->
+			</div>
+			<div class="uadm-tooltip">Профиль</div> <!-- profile sign -->
+		</div>
+		<!--.uadm-profile-->
+
+		<!--.uadm-avatar-->
+		<div class="uadm-l">
+			<div class="uadm-iparent uadm-iparent--unread uadm-message">
+				<i class="uadm-iparent-ico icouAdm-mail"><span class="uadm-count"></span></i> <!-- messages count -->
+				<div class="uadm-subl">
+					<div class="uadm-subi">
+						<a href="http://bream2008.narod.ru/index/14-0-0" target="_blank"><i class="icouAdm-upload"></i><span>Входящие <span class="uadm-count"></span></span></a>
+					</div> <!-- inbox messages -->
+					<div class="uadm-subi">
+						<a href="http://bream2008.narod.ru/index/14-0-1" target="_blank"><i class="icouAdm-sent"></i><span>Отправленные</span></a>
+					</div> <!-- sent messages -->
+					<div class="uadm-subi">
+						<a href="http://bream2008.narod.ru/index/14-0-0-1" target="_blank"><i class="icouAdm-write"></i><span>Отправить сообщение</span></a>
+					</div> <!-- send message -->
+					 <!-- mass mailing -->
+				</div>
+				<div class="uadm-tooltip">Сообщения</div> <!-- messages sign -->
+			</div>
+			 <!-- infoblock start tags -->
+			 <!-- site is blocked -->
+			 <!-- site is doubtfull -->
+			 <!-- some additional information and promotions -->
+			 <!-- server name -->
+			 <!-- login to control panel -->
+			 <!-- view bar settings -->
+			 <!-- question abount uCoz -->
+			 <!-- official blog uCoz -->
+			 <!-- all projects -->
+			 <!-- infoblock end tags -->
+		<div class="uadm-iparent"><i class="uadm-iparent-ico icouAdm-doc"></i><div class="uadm-subl"><div class="uadm-subl-hline">Мои материалы</div> <!--sign my active materials -->
+<div class="uadm-subi"><span class="subl-el-not-active"><span style="opacity: 0.5;">Нет активных материалов</span></span></div>
+
+
+</div><div class="uadm-tooltip">Материалы</div></div> <!-- materials -->
+		<div class="uadm-iparent uadm-iparent--unread uadm-comments"><i class="uadm-iparent-ico icouAdm-mycomm-bubble"><span id="new-comments-count" class="uadm-count"></span></i> <!-- new comments amount -->
+	<div id="new-comments" class="uadm-subl">
+ <!-- manage comments -->
+	<div class="uadm-subi"><a href="http://bream2008.narod.ru/index/34-7531" target="_blank"><i class="icouAdm-mycomm"></i><span>Мои комментарии</span></a></div> <!-- my comments -->
+	</div><div class="uadm-tooltip">Комментарии</div></div> <!-- comments -->
+		<div class="uadm-iparent "><i class="uadm-iparent-ico icouAdm-add-disk"></i><div class="uadm-subl"> <!-- add material start block -->
+		<div class="uadm-subl-hline">Добавить материал в:</div><div class="uadm-subi"><a href="http://bream2008.narod.ru/blog/0-0-0-0-1" target="_blank"><i class="icouAdm-blog2"></i><span>Блог</span></a></div><div class="uadm-subi"><a href="http://bream2008.narod.ru/news/0-0-0-0-1" target="_blank"><i class="icouAdm-news"></i><span>Слухи Говносайта</span></a></div> <!-- list of links add material (active modules) -->
+		</div><div class="uadm-tooltip">Добавить материал</div></div> <!-- add material end block -->
+		 <!-- fman and disk start block -->
+		 <!-- disk quota -->
+		 <!-- disk recount -->
+		 <!-- call file manager -->
+		 <!-- fman and disk end block -->
+		 <!-- delete user's notes and blocking options -->
+		 <!-- shop block -->
+		<div class="uadm-iparent"><i class="uadm-iparent-ico icouAdm-updates"></i><div class="uadm-subl uadm-subl--reverse">
+	<div class="uadm-subi"><a href="javascript://" onclick="new _uWnd('SfU','Извещения об обновлениях',400,200,{align:'',closeonesc:1,min:0,max:0,maxh:300,resize:0,},{url:'/index/67'});return false;" target="_blank"><i class="icouAdm-updates"></i><span>Извещения об обновлениях</span></a></div>
+	<div class="uadm-subi"><a href="http://bream2008.narod.ru/forum/0-0-1-46" target="_self"><i class="icouAdm-ublog-2"></i><span>Подписки форума</span></a></div>
+	</div><div class="uadm-tooltip">Уведомления</div></div> <!-- notifications menu -->
+		<div class="uadm-iparent" id="uadm-search"><i class="uadm-iparent-ico icouAdm-search"></i>
+	<div class="uadm-subl uadm-subl--reverse"><div class="uadm-subi"><div class="uadm-search">
+	<form id="search_site" action="/search/" method="GET">
+		<i class="icouAdm-search"></i><input type="text" name="q" placeholder="Поиск по сайту" onfocus="this.placeholder='Поиск по сайту'"> <!-- search -->
+	</form>
+	</div></div></div>
+	<div class="uadm-tooltip">Поиск</div>
+	</div> <!-- search menu -->
+			 <!-- groups visualization for user-bar start tags -->
+			 <!-- groups -->
+			 <!-- groups visualization for user-bar end tags -->
+			 <!-- Site variables and constructor menu -->
+		</div><!--.uadm-l-->
+		<div class="uadm-toggle" data-utoggle=".uadm">
+			<i class="icouAdm-close"></i>
+		</div><!--.uadm-toggle-->
+	<div class="uadm-collapse uadm--animate uadm-collapse--empty"><div class="uadm-iparent uadm--empty">
+			<i class="uadm-iparent-ico icouAdm-user">
+				<span class="uadm-count"></span>
+			</i>
+			<a href="javascript://" class="uadm-avatar "><span><img src="index_pliki/AOh14GgNG0-PR0_QZJ1HYv1d1r1jQ_VsKAjVga0AV09Bs96-c.png" alt=""> <!-- avatar --></span></a>
+			<div class="uadm-subl uadm-profile-menu">
+				 <!-- nick update -->
+				 <!-- fill opts -->
+				 <!-- verify email -->
+				<div class="uadm-subi">
+					<a href="javascript://" rel="nofollow" onclick="window.open('/index/8', 'upp', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"> <!-- personal page link -->
+						<i class="icouAdm-business-card"></i>
+						<span>Мой профиль на сайте</span>
+					</a>
+				</div>
+				<div class="uadm-subi">
+					<span onclick="new _uWnd('Cab','Цвет всплывающих окон',180,150,{align:'',autosize:1,closeonesc:1,min:0,max:0},{url:'/index/42'});">
+						<i class="icouAdm-business-card"></i>
+						<span>Цвет всплывающих окон&nbsp;&nbsp;<img src="index_pliki/sample.gif"></span>
+					</span>
+				</div>
+				<div class="uadm-subi"><a href="https://3530936099.uid.me/" target="_blank"><i class="icouAdm-me"></i><span>Моя визитка uID.me</span></a></div> <!-- uid profile -->
+				<div class="uadm-subi"><a href="http://bream2008.narod.ru/index/15-1" target="_blank"><i class="icouAdm-user"></i><span>Пользователи сайта</span></a></div> <!-- list of site users -->
+				<div class="uadm-subi"><a href="http://bream2008.narod.ru/index/10"><i class="icouAdm-exit"></i><span>Выход с сайта</span></a></div> <!-- site exit -->
+			</div>
+			<div class="uadm-tooltip">Профиль</div> <!-- profile sign -->
+		</div><div class="uadm-iparent uadm-iparent--unread uadm-message uadm--empty">
+				<i class="uadm-iparent-ico icouAdm-mail"><span class="uadm-count"></span></i> <!-- messages count -->
+				<div class="uadm-subl">
+					<div class="uadm-subi">
+						<a href="http://bream2008.narod.ru/index/14-0-0" target="_blank"><i class="icouAdm-upload"></i><span>Входящие <span class="uadm-count"></span></span></a>
+					</div> <!-- inbox messages -->
+					<div class="uadm-subi">
+						<a href="http://bream2008.narod.ru/index/14-0-1" target="_blank"><i class="icouAdm-sent"></i><span>Отправленные</span></a>
+					</div> <!-- sent messages -->
+					<div class="uadm-subi">
+						<a href="http://bream2008.narod.ru/index/14-0-0-1" target="_blank"><i class="icouAdm-write"></i><span>Отправить сообщение</span></a>
+					</div> <!-- send message -->
+					 <!-- mass mailing -->
+				</div>
+				<div class="uadm-tooltip">Сообщения</div> <!-- messages sign -->
+			</div><div class="uadm-iparent uadm-iparent--unread uadm-comments js-clone-com uadm--empty"><i class="uadm-iparent-ico icouAdm-mycomm-bubble"><span id="new-comments-count" class="uadm-count"></span></i> <!-- new comments amount -->
+	<div id="new-comments" class="uadm-subl">
+ <!-- manage comments -->
+	<div class="uadm-subi"><a href="http://bream2008.narod.ru/index/34-7531" target="_blank"><i class="icouAdm-mycomm"></i><span>Мои комментарии</span></a></div> <!-- my comments -->
+	</div><div class="uadm-tooltip">Комментарии</div></div><div class="uadm-toggle" data-utoggle=".uadm">
+			<i class="icouAdm-close"></i>
+		</div></div></div><!--uadm-->
+	<script src="index_pliki/uadm.js"></script>
+</div>
+
+
+<!--U1AHEADER1Z--><img src="index_pliki/sinij_list.jpg" alt="">
+<script src="index_pliki/a"></script><div style="background:#000000; line-height:30px; font-size:12px; color:#FFFFFF;"><marquee direction="left" height="30">Что бы выключить рекламу включите Adblock</marquee></div>
+ <div id="navBar">
+ <div id="linkBar"><a href="http://bream2008.narod.ru/"><!--<s5176>-->Главная<!--</s>--></a> | <a href="javascript://" rel="nofollow" onclick="window.open('/index/8', 'upp', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><!--<s5214>-->Мой профиль<!--</s>--></a>  | <a href="http://bream2008.narod.ru/index/10"><!--<s5164>-->Выход<!--</s>--></a> | <a href="http://bream2008.narod.ru/forum/22-0-0-37">RSS</a></div>
+ <div id="loginBar"><!--<s5200>-->Вы вошли как<!--</s>--> <a href="javascript://" rel="nofollow" onclick="window.open('/index/8', 'upp', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><span style="font-weight: bold;">amogusamogusovich2</span></a> | <!--<s3167>-->Группа<!--</s>--> "<span style="text-decoration: underline;">Пользователи</span>"</div>
+ <div style="clear:both;"></div>
+ </div>
+
+ 
+	<link rel="stylesheet" href="index_pliki/base.css">
+	<link rel="stylesheet" href="index_pliki/layer1.css">
+
+	<script src="index_pliki/jquery-3.js"></script>
+	
+	<script src="index_pliki/uwnd.js"></script>
+	<script src="index_pliki/uutils_003.fcg"></script>
+<script>/* --- UCOZ-JS-INIT_CODE --- */
+	window.ulb = {photoPage:"Перейти на страницу с фотографией.", closeBtn:"Закрыть", error:"Запрошенный контент не может быть загружен. Пожалуйста, попробуйте позже.", next:"Следующий", prev:"Предыдущий", btnPlay:"Начать слайдшоу", btnToggle:"Изменить размер", };
+var umoder_panel_params = {confirm_activate:'Вы действительно хотите активировать данный материал?', confirm_delete:'Вы подтверждаете удаление?', ssid:'7kI7Eg7Q', };
+/* --- UCOZ-JS-END --- */</script>
+
+	<link rel="stylesheet" href="index_pliki/ulightbox.css">
+	<link rel="stylesheet" href="index_pliki/moder_panel_new.css">
+	<link rel="stylesheet" href="index_pliki/social.css">
+	<script src="index_pliki/ulightbox.js"></script>
+	<script src="index_pliki/moder_scripts.js"></script>
+	<script>
+/* --- UCOZ-JS-DATA --- */
+window.uCoz = {"ssid":"7kI7Eg7Q","site":{"id":"obream2008","host":"bream2008.narod.ru","domain":null},"language":"ru"};
+/* --- UCOZ-JS-CODE --- */
+
+	function Insert(qmid, user, text) {
+		user = user.replace(/\[/g, '\\[').replace(/\]/g, '\\]');
+		if (!!text) {
+			qmid = qmid.replace(/[^0-9]/g, "");
+			paste("[quote="+user+";"+qmid+"]"+text+"[/quote]\n", 0);
+		} else {
+			_uWnd.alert('Выделите текст для цитирования', '', {w:230, h:80, tm:3000});
+		}
+	}
+
+	function paste(text, flag) {
+		if (document.selection && flag) {
+			document.addform.message.focus();
+			document.addform.document.selection.createRange().text = text;
+		} else {
+			document.addform.message.value += text;
+		}
+	}
+
+	function get_selection() {
+		if (window.getSelection) {
+			selection = window.getSelection().toString();
+		} else if (document.getSelection) {
+			selection = document.getSelection();
+		} else {
+			selection = document.selection.createRange().text;
+		}
+	}
+
+	function pdel(id, n) {
+		if (confirm('Вы подтверждаете удаление?')) {
+			(window.pDelBut = document.getElementById('dbo' + id))
+				&& (pDelBut.width = pDelBut.height = 13) && (pDelBut.src = '/.s/img/ma/m/i2.gif');
+			_uPostForm('', {url:'/forum/22-1-' + id + '-8-0-7kI7Eg7Q', 't_pid': n});
+		}
+	}
+ function uSocialLogin(t) {
+			var params = {"ok":{"height":390,"width":710},"facebook":{"width":950,"height":520},"google":{"width":700,"height":600},"vkontakte":{"height":400,"width":790},"yandex":{"width":870,"height":515}};
+			var ref = escape(location.protocol + '//' + ('bream2008.narod.ru' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' ))));
+			window.open('/'+t+'?ref='+ref,'conwin','width='+params[t].width+',height='+params[t].height+',status=1,resizable=1,left='+parseInt((screen.availWidth/2)-(params[t].width/2))+',top='+parseInt((screen.availHeight/2)-(params[t].height/2)-20)+'screenX='+parseInt((screen.availWidth/2)-(params[t].width/2))+',screenY='+parseInt((screen.availHeight/2)-(params[t].height/2)-20));
+			return false;
+		}
+ function uSocialLogin(t) {
+			var params = {"yandex":{"width":870,"height":515},"ok":{"height":390,"width":710},"google":{"height":600,"width":700},"facebook":{"width":950,"height":520},"vkontakte":{"height":400,"width":790}};
+			var ref = escape(location.protocol + '//' + ('bream2008.narod.ru' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' ))));
+			window.open('/'+t+'?ref='+ref,'conwin','width='+params[t].width+',height='+params[t].height+',status=1,resizable=1,left='+parseInt((screen.availWidth/2)-(params[t].width/2))+',top='+parseInt((screen.availHeight/2)-(params[t].height/2)-20)+'screenX='+parseInt((screen.availWidth/2)-(params[t].width/2))+',screenY='+parseInt((screen.availHeight/2)-(params[t].height/2)-20));
+			return false;
+		}
+/* --- UCOZ-JS-END --- */
+</script>
+
+	<style>.UhideBlockL{display:none; }</style>
+
+	<link rel="stylesheet" href="index_pliki/base.css">
+	<link rel="stylesheet" href="index_pliki/layer1.css">
+
+	<script src="index_pliki/jquery-3.js"></script>
+	
+	<script src="index_pliki/uwnd.js"></script>
+	<script src="index_pliki/uutils.fcg"></script>
+<script>/* --- UCOZ-JS-INIT_CODE --- */
+	window.ulb = {photoPage:"Перейти на страницу с фотографией.", closeBtn:"Закрыть", error:"Запрошенный контент не может быть загружен. Пожалуйста, попробуйте позже.", next:"Следующий", prev:"Предыдущий", btnPlay:"Начать слайдшоу", btnToggle:"Изменить размер", };
+var umoder_panel_params = {confirm_activate:'Вы действительно хотите активировать данный материал?', confirm_delete:'Вы подтверждаете удаление?', ssid:'7kI7Eg7Q', };
+/* --- UCOZ-JS-END --- */</script>
+
+	<link rel="stylesheet" href="index_pliki/ulightbox.css">
+	<link rel="stylesheet" href="index_pliki/moder_panel_new.css">
+	<link rel="stylesheet" href="index_pliki/social.css">
+	<script src="index_pliki/ulightbox.js"></script>
+	<script src="index_pliki/moder_scripts.js"></script>
+	<script>
+/* --- UCOZ-JS-DATA --- */
+window.uCoz = {"language":"ru","site":{"id":"obream2008","host":"bream2008.narod.ru","domain":null},"ssid":"7kI7Eg7Q"};
+/* --- UCOZ-JS-CODE --- */
+
+	function Insert(qmid, user, text) {
+		user = user.replace(/\[/g, '\\[').replace(/\]/g, '\\]');
+		if (!!text) {
+			qmid = qmid.replace(/[^0-9]/g, "");
+			paste("[quote="+user+";"+qmid+"]"+text+"[/quote]\n", 0);
+		} else {
+			_uWnd.alert('Выделите текст для цитирования', '', {w:230, h:80, tm:3000});
+		}
+	}
+
+	function paste(text, flag) {
+		if (document.selection && flag) {
+			document.addform.message.focus();
+			document.addform.document.selection.createRange().text = text;
+		} else {
+			document.addform.message.value += text;
+		}
+	}
+
+	function get_selection() {
+		if (window.getSelection) {
+			selection = window.getSelection().toString();
+		} else if (document.getSelection) {
+			selection = document.getSelection();
+		} else {
+			selection = document.selection.createRange().text;
+		}
+	}
+
+	function pdel(id, n) {
+		if (confirm('Вы подтверждаете удаление?')) {
+			(window.pDelBut = document.getElementById('dbo' + id))
+				&& (pDelBut.width = pDelBut.height = 13) && (pDelBut.src = '/.s/img/ma/m/i2.gif');
+			_uPostForm('', {url:'/forum/22-1-' + id + '-8-0-7kI7Eg7Q', 't_pid': n});
+		}
+	}
+ function uSocialLogin(t) {
+			var params = {"facebook":{"height":520,"width":950},"ok":{"width":710,"height":390},"google":{"width":700,"height":600},"vkontakte":{"width":790,"height":400},"yandex":{"width":870,"height":515}};
+			var ref = escape(location.protocol + '//' + ('bream2008.narod.ru' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' ))));
+			window.open('/'+t+'?ref='+ref,'conwin','width='+params[t].width+',height='+params[t].height+',status=1,resizable=1,left='+parseInt((screen.availWidth/2)-(params[t].width/2))+',top='+parseInt((screen.availHeight/2)-(params[t].height/2)-20)+'screenX='+parseInt((screen.availWidth/2)-(params[t].width/2))+',screenY='+parseInt((screen.availHeight/2)-(params[t].height/2)-20));
+			return false;
+		}
+ function uSocialLogin(t) {
+			var params = {"ok":{"height":390,"width":710},"facebook":{"width":950,"height":520},"google":{"width":700,"height":600},"vkontakte":{"height":400,"width":790},"yandex":{"width":870,"height":515}};
+			var ref = escape(location.protocol + '//' + ('bream2008.narod.ru' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' ))));
+			window.open('/'+t+'?ref='+ref,'conwin','width='+params[t].width+',height='+params[t].height+',status=1,resizable=1,left='+parseInt((screen.availWidth/2)-(params[t].width/2))+',top='+parseInt((screen.availHeight/2)-(params[t].height/2)-20)+'screenX='+parseInt((screen.availWidth/2)-(params[t].width/2))+',screenY='+parseInt((screen.availHeight/2)-(params[t].height/2)-20));
+			return false;
+		}
+ function uSocialLogin(t) {
+			var params = {"yandex":{"width":870,"height":515},"ok":{"height":390,"width":710},"google":{"height":600,"width":700},"facebook":{"width":950,"height":520},"vkontakte":{"height":400,"width":790}};
+			var ref = escape(location.protocol + '//' + ('bream2008.narod.ru' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' ))));
+			window.open('/'+t+'?ref='+ref,'conwin','width='+params[t].width+',height='+params[t].height+',status=1,resizable=1,left='+parseInt((screen.availWidth/2)-(params[t].width/2))+',top='+parseInt((screen.availHeight/2)-(params[t].height/2)-20)+'screenX='+parseInt((screen.availWidth/2)-(params[t].width/2))+',screenY='+parseInt((screen.availHeight/2)-(params[t].height/2)-20));
+			return false;
+		}
+/* --- UCOZ-JS-END --- */
+</script>
+
+	<style>.UhideBlockL{display:none; }</style>
+<style type="text/css"> 
+BODY{cursor:url('http://bream2008.narod.ru/left_ptr.cur');} 
+</style><!--/U1AHEADER1Z-->
+
+<div class="forumContent"><table width="100%" height="30" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td align="right">[
+<a href="javascript://" rel="nofollow" id="upml" class="fNavLink" onclick="window.open('/index/14','pmw','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><!--<s3065>-->Личные сообщения<!--</s>-->(0)</a> ·
+
+<a class="fNavLink" href="http://bream2008.narod.ru/forum/0-0-1-34" rel="nofollow"><!--<s5209>-->Новые сообщения<!--</s>--></a> · 
+<a class="fNavLink" href="http://bream2008.narod.ru/forum/0-0-1-35" rel="nofollow"><!--<s5216>-->Участники<!--</s>--></a> · 
+<a class="fNavLink" href="http://bream2008.narod.ru/forum/0-0-0-36" rel="nofollow"><!--<s5166>-->Правила форума<!--</s>--></a> · 
+<a class="fNavLink" href="http://bream2008.narod.ru/forum/0-0-0-6" rel="nofollow"><!--<s3163>-->Поиск<!--</s>--></a> · 
+<a class="fNavLink" href="http://bream2008.narod.ru/forum/22-0-0-37" rel="nofollow">RSS</a> · 
+<a class="fNavLink" href="http://bream2008.narod.ru/forum/0-0-1-46" rel="nofollow"><!--<s6773>-->Подписки<!--</s>--></a> ]</td>
+</tr>
+</tbody></table>
+
+		
+		
+			<script>
+			function subscribe(s, flag) {
+				if (flag == -1) {
+					do_ = 33;
+					message = 'Вы отписались от email-уведомлений';
+				} else {
+					do_ = 44;
+					message = 'Вы подписались на email-уведомления';
+				}
+				var url = '/forum/22-1-0-'+do_;
+				$.ajax({
+					url: url,
+					success: function () {
+						if (flag == -1) {
+							$(s).text('Подписаться на тему');
+							$(s).off('click');
+							$(s).attr('onclick', 'subscribe(this)');
+						} else {
+							$(s).text('Отписаться от темы');
+							$(s).off('click');
+							$(s).attr('onclick', 'subscribe(this, -1)');
+						}
+						_uWnd.alert(message,'',{w:230,h:80,tm:3000});
+					},
+					error: function () {
+						_uWnd.alert('Error', '', {w:230, h:80, tm:3000});
+					}
+				});
+			}
+			</script>
+
+		<table class="ThrTopButtonsTbl" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody><tr class="ThrTopButtonsRow1">
+				<td class="ThrTopButtonsCl11" width="50%">
+	<ul class="switches switchesTbl forum-pages">
+		<li class="pagesInfo">Страница <span class="curPage">1</span> из <span class="numPages">2</span></li>
+		 <li class="switchActive">1</li>
+	<li class="switch"><a class="switchDigit" href="http://bream2008.narod.ru/forum/22-1-2">2</a></li> <li class="switch switch-next"><a class="switchNext" href="http://bream2008.narod.ru/forum/22-1-2" title="Следующая">»</a></li>
+	</ul></td>
+				<td class="frmBtns ThrTopButtonsCl12" align="right"><div id="frmButns83"><a href="javascript:;" rel="nofollow" onclick="_uWnd.alert('У вас недостаточно прав для данного действия','',{w:230,h:80,tm:3000});return false;"><img alt="" style="margin:0;padding:0;border:0;" title="Ответить" src="index_pliki/t_reply.gif"></a> <a href="javascript:;" rel="nofollow" onclick="_uWnd.alert('У вас недостаточно прав для данного действия','',{w:230,h:80,tm:3000});return false;"><img alt="" style="margin:0;padding:0;border:0;" title="Новая тема" src="index_pliki/t_new.gif"></a> <a href="javascript:;" rel="nofollow" onclick="_uWnd.alert('У вас недостаточно прав для данного действия','',{w:230,h:80,tm:3000});return false;"><img alt="" style="margin:0;padding:0;border:0;" title="Новый опрос" src="index_pliki/t_poll.gif"></a></div></td></tr>
+			
+		</tbody></table>
+		
+	<table class="ThrForumBarTbl" width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tbody><tr class="ThrForumBarRow1">
+			<td class="forumNamesBar ThrForumBarCl11" style="padding-top:3px;padding-bottom:5px;">
+				<a class="forumBar" href="http://bream2008.narod.ru/forum/">Форум</a>  » <a class="forumBar" href="http://bream2008.narod.ru/forum/21">Тема с источниками оригинальных версий</a> » <a class="forumBar" href="http://bream2008.narod.ru/forum/22">Тема с источниками оригинальных версий</a> » <a class="forumBarA" href="http://bream2008.narod.ru/forum/22-1-1">Холявушка</a></td><td class="ThrForumBarCl12">
+	
+	<script>
+	function check_search(s) {
+		if ($(s).find('input[type="text"]').val().length< 3) {
+			_uWnd.alert('Вы ввели слишком короткий поисковой запрос.','',{w:230,h:80,tm:3000})
+			return;
+		}
+		$(s).submit();
+	}
+	</script>
+	<form id="thread_search_form" onsubmit="check_search(this);return false;" action="/forum/22-1" method="GET">
+		<input class="fastNav" type="submit" value="Ok" id="thread_search_button"><input type="text" name="s" placeholder="Поиск по теме" id="thread_search_field">
+	</form>
+			</td></tr>
+	</tbody></table>
+		
+		<div class="gDivLeft">
+	<div class="gDivRight">
+		<table class="gTable" width="100%" cellspacing="1" cellpadding="0" border="0">
+		<tbody><tr>
+			<td class="gTableTop">
+				<div style="float:right" class="gTopCornerRight"></div>
+				Холявушка
+				<div id="subscribe">[ <a href="javascript:;" onclick="subscribe(this);return false;" class="thread_subscribe">Подписаться на тему</a> ]</div></td></tr><tr id="post1"><td class="postFirst"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]dr_bream[/b],');return false;">dr_bream</a></td><td class="postTdTop">Дата: Вторник, 03.07.2018, 12:49 | Сообщение # <a rel="nofollow" name="1" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1-16-1530611394'); return false;">1</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<img alt="" title="dr_bream" class="userAvatar" src="index_pliki/16.png" border="0"><div class="postRankName">Житель 2 ранга</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/admin.gif" title="Администраторы"></div>
+<div class="postUserGroup">Группа: Администраторы</div>
+
+<div class="numposts">Сообщений: <span="unp">430</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-1'}); return false;"><b>65</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'1', c:'/forum/22-1-1-16-1530611394'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1" edit-url="">#windows<br>----------------------------------------------------------------------------------------------------------------------------------------<br>Активатор<br>KmsAuto2015 <a class="link" target="_blank" href="http://bream2008.narod.ru/osvsos/KMSAuto_Net.exe" rel="nofollow">http://bream2008.narod.ru/osvsos/KMSAuto_Net.exe</a> ДЛЯ СТАРЫХ ОС ,для тестирования<br>KmsAuto2016 <a class="link" target="_blank" href="http://bream2008.narod.ru/app/KMSAuto_Net.exe" rel="nofollow">http://bream2008.narod.ru/app/KMSAuto_Net.exe</a> ДЛЯ СТАРЫХ ОС ,для тестирования<br>Вкусняшка для Висты:<a class="link" href="http://bream2008.narod.ru/soft/vistasp2ld/Activation_Vista_UltimateSP2.zip" rel="nofollow" target="_blank">Для sp2 =) помогает</a><br>----------------------------------------------------------------------------------------------------------------------------------------<br><a class="link" href="https://u.to/ZExMGA" title="https://cloud.mail.ru/public/FSyd%2FLQHZFpNAz" target="_blank">My WebPage</a>Windows ISO Downloader<br>----------------------------------------------------------------------------------------------------------------------------------------<br><a class="link" href="https://u.to/Spg_Gw" title="http://rutracker.org/forum/viewtopic.php?t=6013702" target="_blank">windows 10</a> Windows 10 2009 x86_64<br><a class="link" href="https://u.to/BBF3Gw" title="https://msreview.net/index.php?do=download&amp;id=147" target="_blank">windows 11 dev</a><br><a class="link" href="https://u.to/y2aEGw" title="https://nnmclub.to/forum/download.php?id=1037883" target="_blank">Windows 10 LTSC</a><br><a class="link" href="https://dubox.com/s/105WS4c9712nQ3dH8V02drQ%20%D0%9A%D0%BE%D0%B4%20%D0%B8%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F:sjjr" target="_blank">LTSB 2016 RUS</a><br><a class="link" target="_blank" href="https://u.to/lsCyEg" rel="nofollow">https://u.to/lsCyEg</a> Microsoft Windows Server 2016 RTM<br><a class="link" target="_blank" href="https://rutracker.net/forum/viewtopic.php?t=4769478%C2%A0" rel="nofollow">https://rutracker.net/forum/viewtopic.php?t=4769478&nbsp;</a> Windows 8.1&nbsp; x64 (OEM)<br><a class="link" href="https://u.to/cZg_Gw" title="https://yadi.sk/d/MMqXyiTI4GydYg?w=1" target="_blank">8.1 емб</a> Windows Embedded 8.1<br><a class="link" target="_blank" href="https://u.to/jcCyEg" rel="nofollow">https://u.to/jcCyEg</a> Windows 7 sp1 MSDN<br><a class="link" target="_blank" href="https://u.to/MLo4Fg" rel="nofollow">https://u.to/MLo4Fg</a> Windows Embedded 7<br><a class="link" target="_blank" href="https://u.to/hcCyEg" rel="nofollow">https://u.to/hcCyEg</a> Windows Thin PC (RTM) 6.1 build 7601<br><a class="link" target="_blank" href="https://u.to/j8CyEg" rel="nofollow">https://u.to/j8CyEg</a> Microsoft Windows Vista with SP2 x86 x64<br><a class="link" target="_blank" href="https://u.to/dmeVFg" rel="nofollow">https://u.to/dmeVFg</a> Windows XP Professional SP3<br><a class="link" target="_blank" href="https://u.to/hsCyEg" rel="nofollow">https://u.to/hsCyEg</a> Windows XP Professional x64<br><a class="link" target="_blank" href="https://rutracker.net/forum/viewtopic.php?t=503309%C2%A0%C2%A0" rel="nofollow">https://rutracker.net/forum/viewtopic.php?t=503309&nbsp;&nbsp;</a> Windows Me<br><a class="link" target="_blank" href="https://u.to/gsCyEg" rel="nofollow">https://u.to/gsCyEg</a> Windows 2000 SP4 RUS<br><a class="link" target="_blank" href="https://u.to/gMCyEg" rel="nofollow">https://u.to/gMCyEg</a> Windows 98 SE<br><a class="link" target="_blank" href="https://rutracker.net/forum/viewtopic.php?t=874361%C2%A0" rel="nofollow">https://rutracker.net/forum/viewtopic.php?t=874361&nbsp;</a> Windows 95 OSR 2<br><br><a class="link" target="_blank" href="https://vk.com/away.php?to=http%3A%2F%2Fbream2008.narod.ru%2Fftp%2Fkljuch_dlja_windows.byikingiosmasterupdate_2.0.txt&amp;cc_key=" rel="nofollow">https://vk.com/away.ph....cc_key=</a> ключики<br><a class="link" href="https://u.to/AVNoGw" title="https://cloud.mail.ru/public/ypuS%2FQbLtommQi" target="_blank">dudusoft3</a><br><a class="link" target="_blank" href="https://u.to/gBl4Fg" rel="nofollow">https://u.to/gBl4Fg</a> Подборка бесплатного софта<br><a class="link" target="_blank" href="https://u.to/OuPRFg" rel="nofollow">https://u.to/OuPRFg</a> Подборка бесплатного софта вторая версия<br><br>#linux<br>-----------------------------------------------------------------------------------------------------------------------------------------<br><a class="link" href="https://u.to/FACLGA" title="https://mirror.yandex.ru/altlinux/p9/images/workstation/x86_64/alt-workstation-9.0-x86_64.iso" target="_blank">База Альт линукс 64 бита Проф версия 9</a><br><a class="link" target="_blank" href="https://u.to/g8CyEg" rel="nofollow">https://u.to/g8CyEg</a> ROSA Desktop Fresh R10,9,8<br><a class="link" target="_blank" href="https://u.to/nE9NFg" rel="nofollow">https://u.to/nE9NFg</a> Astra Linux<br><a class="link" href="https://u.to/I8PvGQ" title="https://mirror.yandex.ru/altlinux/p9/images/simply/x86_64/slinux-9.0-x86_64.iso" target="_blank">SL linux xfce</a><br><a class="link" target="_blank" href="https://u.to/NLo4Fg" rel="nofollow">https://u.to/NLo4Fg</a> debian 32 бита non free<br><a class="link" target="_blank" href="https://u.to/hMCyEg" rel="nofollow">https://u.to/hMCyEg</a> debian<br><br>#macos<br>-----------------------------------------------------------------------------------------------------------------------------------------<br><a class="link" target="_blank" href="https://u.to/i8CyEg" rel="nofollow">https://u.to/i8CyEg</a> MacOS Sierra ( Для Маков 2010-2017)<br><a class="link" target="_blank" href="https://u.to/k8CyEg" rel="nofollow">https://u.to/k8CyEg</a> Mac OS Snow Leopard (Для Маков 2006-2009)<br><a class="link" target="_blank" href="https://u.to/gcCyEg" rel="nofollow">https://u.to/gcCyEg</a> Mac OS X Leopard 10.5.4 (Powerpc\intel) g4,g5<br><a class="link" target="_blank" href="https://u.to/h8CyEg" rel="nofollow">https://u.to/h8CyEg</a> Mac OS X 10.4.6 Tiger (Powerpc) g3,g4,g5<br><a class="link" target="_blank" href="https://yadi.sk/d/I49P1BbLf7zcW%C2%A0" rel="nofollow">https://yadi.sk/d/I49P1BbLf7zcW&nbsp;</a> MacOS classic 9 (Powerpc) g3 g4<br>------------------------------------------------------------------------------------------------------------------------------------------<br>#Photoshop на шару и без взлома<br>ФШ:<a class="link" href="https://u.to/nga7Eg" title="https://cloud.mail.ru/public/7qLt/zyvLEa3wn" rel="nofollow" target="_blank">фш</a><br>офф ключ :1045-1412-5685-1654-6343-1431<br>------------------------------------------------------------------------------------------------------------------------------------------<br><a class="link" href="https://u.to/KMPvGQ" title="https://www.youtube.com/redirect?redir_token=tRdCzyeWs2dtBsfpJi9aIIvaPRB8MTU0MTY2MTM2NkAxNTQxNTc0OTY2&amp;event=video_description&amp;v=O5O7hb1askM&amp;q=https%3A%2F%2Fyadi.sk%2Fd%2FRg25h8Hf3UH5no" rel="nofollow" target="_blank">https://yadi.sk/d/Rg25h8Hf3UH5no</a> Скачать Алису без Яндекс Браузера<br><a class="link" target="_blank" href="https://u.to/SA_2Fg" rel="nofollow">https://u.to/SA_2Fg</a> Пакет обновлений для Windows xp<br><a class="link" target="_blank" href="https://u.to/1mhOFg" rel="nofollow">https://u.to/1mhOFg</a> Скачать WMM и Киностудию<br>------------------------------------------------------------------------------------------------------------------------------------------<br><a class="link" href="http://bream2008.narod.ru/ftp/recoveRX/RecoveRx_Win_v3.8.0_setup.exe" rel="nofollow" target="_blank">Фармат Флешак Трансценд=)</a>&nbsp; скачать RecoveRX<br>------------------------------------------------------------------------------------------------------------------------------------------<br><a class="link" href="https://u.to/L7o4Fg" title="https://cloud.mail.ru/public/EEDm/peR8dug2K" rel="nofollow" target="_blank">Офис просто офис=)))) качай что смотришь</a> Офисный пакет<br>------------------------------------------------------------------------------------------------------------------------------------------<br><a class="link" href="https://u.to/bGgCGw" title="https://cloud.mail.ru/public/uV8F/1y6xZxNjp" target="_blank">waterfox Русский язык + Бел</a><br><a class="link" target="_blank" href="https://u.to/cDVQFg" rel="nofollow">https://u.to/cDVQFg</a> fastInstall 1.3.2<br><a class="link" href="https://u.to/h86KGA" title="https://cloud.mail.ru/public/5kyz%2FbnF6EsMRr" target="_blank">Золотой софт 2002</a><br><a class="link" href="https://u.to/muOKGA" title="https://cloud.mail.ru/public/8Pak%2Ff1A16RExa" target="_blank">BeOS 5 BONE </a><br><a class="link" href="https://u.to/J8PvGQ" title="https://yadi.sk/d/c1F-6qNxMr_84A" target="_blank">siemens мобильный софт</a><br><a class="link" href="https://u.to/JcPvGQ" title="https://cloud.mail.ru/public/bbAK%2F2x7a2ZiTh" target="_blank">Обои от Лещенко</a><br><a class="link" href="http://bream2008.narod.ru/ClickTOflash/DefenderControl.zip" target="_blank">Грохнуть дефендер</a><br><a class="link" href="https://u.to/PSMhGw" title="https://cloud.mail.ru/public/8aWR/rkUYRoZfj" target="_blank">windows live 2012</a></span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-1', 'up1', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-1-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"><div id="nativeroll_video_cont" style="display:none;"></div></td></tr><tr id="post22"><td class="postRest2"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]g10120750[/b],');return false;">g10120750</a></td><td class="postTdTop">Дата: Вторник, 03.07.2018, 16:17 | Сообщение # <a rel="nofollow" name="22" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-22-16-1530623847'); return false;">2</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<img alt="" title="g10120750" class="userAvatar" src="index_pliki/01607546.jpg" border="0"><div class="postRankName">Участник</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/3b6cb2070863359702680cb200d16bad_w200.gif" title="Проверенные"></div>
+<div class="postUserGroup">Группа: Проверенные</div>
+
+<div class="numposts">Сообщений: <span="unp">15</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-16'}); return false;"><b>4</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'16', c:'/forum/22-1-22-16-1530623847'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-16'});return false;">0%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-22" edit-url=""><img src="index_pliki/e12c16863e2d.jpg" alt="" border="0"></span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-16', 'up16', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-16-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-22-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post300"><td class="postRest1"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]superautolife[/b],');return false;">superautolife</a></td><td class="postTdTop">Дата: Среда, 25.07.2018, 23:09 | Сообщение # <a rel="nofollow" name="300" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-300-16-1532549355'); return false;">3</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<div class="postRankName">Живет тут</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/3b6cb2070863359702680cb200d16bad_w200.gif" title="Проверенные"></div>
+<div class="postUserGroup">Группа: Проверенные</div>
+
+<div class="numposts">Сообщений: <span="unp">39</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-40'}); return false;"><b>-2</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'40', c:'/forum/22-1-300-16-1532549355'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-40'});return false;">0%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-300" edit-url="">Мне
+ больше нравится Re-Loader Activator. Ни разу не подводил, Защитник 
+Windows ругается на него, но удалить активацию не может, так что 
+рекомендую:&nbsp;<a class="link" target="_blank" href="http://u.to/SM3kEg" title="https://windakeys.ru/aktivatory/202-re-loader-activator-3-0.html" rel="nofollow">https://windakeys.ru/aktivatory/202-re-loader-activator-3-0.html</a></span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-40', 'up40', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-40-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-300-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1924"><td class="postRest2"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]nhjk[/b],');return false;">nhjk</a></td><td class="postTdTop">Дата: Суббота, 18.04.2020, 22:31 | Сообщение # <a rel="nofollow" name="1924" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1924-16-1587238300'); return false;">4</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<div class="postRankName">Участник</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/3b6cb2070863359702680cb200d16bad_w200.gif" title="Проверенные"></div>
+<div class="postUserGroup">Группа: Проверенные</div>
+
+<div class="numposts">Сообщений: <span="unp">18</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-34'}); return false;"><b>-1</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'34', c:'/forum/22-1-1924-16-1587238300'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-34'});return false;">0%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1924" edit-url="">Можно ключики к 8.0?</span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-34', 'up34', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-34-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1924-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1925"><td class="postRest1"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]dr_bream[/b],');return false;">dr_bream</a></td><td class="postTdTop">Дата: Понедельник, 04.05.2020, 22:52 | Сообщение # <a rel="nofollow" name="1925" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1925-16-1588621927'); return false;">5</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<img alt="" title="dr_bream" class="userAvatar" src="index_pliki/16.png" border="0"><div class="postRankName">Житель 2 ранга</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/admin.gif" title="Администраторы"></div>
+<div class="postUserGroup">Группа: Администраторы</div>
+
+<div class="numposts">Сообщений: <span="unp">430</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-1'}); return false;"><b>65</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'1', c:'/forum/22-1-1925-16-1588621927'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1925" edit-url=""><!--uzquote--><div class="bbQuoteBlock"><div class="bbQuoteName" style="padding-left:5px;font-size:7pt"><b>Цитата</b> <span class="qName"><!--qn-->nhjk<!--/qn--></span> (<span class="qAnchor"><!--qa--><a href="http://bream2008.narod.ru/forum/22-1-1924-16-1587238300"><img alt="" style="margin:0;padding:0;vertical-align:middle;" title="Ссылка на цитируемый текст" src="index_pliki/lastpost.gif"></a><!--/qa--></span>) </div><div class="quoteMessage" style="border:1px inset;max-height:200px;overflow:auto;"><!--uzq-->Можно ключики к 8.0?<!--/uzq--></div></div><!--/uzquote--><br>Нету у нас тут ключника</span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-1', 'up1', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-1-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1925-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1954"><td class="postRest2"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]alyoshad354[/b],');return false;">alyoshad354</a></td><td class="postTdTop">Дата: Суббота, 30.05.2020, 18:14 | Сообщение # <a rel="nofollow" name="1954" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1954-16-1590851647'); return false;">6</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<div class="postRankName">Сказал слово</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/user_blic.gif" title="Пользователи"></div>
+<div class="postUserGroup">Группа: Пользователи</div>
+
+<div class="numposts">Сообщений: <span="unp">1</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-2279'}); return false;"><b>-1</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'2279', c:'/forum/22-1-1954-16-1590851647'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-2279'});return false;">0%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1954" edit-url="">привет всем</span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-2279', 'up2279', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-2279-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1954-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1955"><td class="postRest1"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]SamWin4ster[/b],');return false;">SamWin4ster</a></td><td class="postTdTop">Дата: Суббота, 30.05.2020, 19:34 | Сообщение # <a rel="nofollow" name="1955" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1955-16-1590856463'); return false;">7</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<div class="postRankName">Сказал слово</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/user_blic.gif" title="Пользователи"></div>
+<div class="postUserGroup">Группа: Пользователи</div>
+
+<div class="numposts">Сообщений: <span="unp">1</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-2281'}); return false;"><b>-1</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'2281', c:'/forum/22-1-1955-16-1590856463'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-2281'});return false;">0%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1955" edit-url="">такой вопросик, а что у вас за подборочки такие бесплатного софта? что в них входит?</span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-2281', 'up2281', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-2281-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1955-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1956"><td class="postRest2"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]borz2006[/b],');return false;">borz2006</a></td><td class="postTdTop">Дата: Суббота, 30.05.2020, 23:07 | Сообщение # <a rel="nofollow" name="1956" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1956-16-1590869231'); return false;">8</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<div class="postRankName">Сказал слово</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/user_blic.gif" title="Пользователи"></div>
+<div class="postUserGroup">Группа: Пользователи</div>
+
+<div class="numposts">Сообщений: <span="unp">1</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-2287'}); return false;"><b>-1</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'2287', c:'/forum/22-1-1956-16-1590869231'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-2287'});return false;">0%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1956" edit-url=""><!--uzquote--><div class="bbQuoteBlock"><div class="bbQuoteName" style="padding-left:5px;font-size:7pt"><b>Цитата</b> <span class="qName"><!--qn-->SamWin4ster<!--/qn--></span> (<span class="qAnchor"><!--qa--><a href="http://bream2008.narod.ru/forum/22-1-1955-16-1590856463"><img alt="" style="margin:0;padding:0;vertical-align:middle;" title="Ссылка на цитируемый текст" src="index_pliki/lastpost.gif"></a><!--/qa--></span>) </div><div class="quoteMessage" style="border:1px inset;max-height:200px;overflow:auto;"><!--uzq-->такой вопросик, а что у вас за подборочки такие бесплатного софта? что в них входит?<!--/uzq--></div></div><!--/uzquote--><br><br>Кажется, что из его старых дисков софтина. <img src="index_pliki/tongue.gif" alt="tongue" border="0" align="absmiddle"></span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-2287', 'up2287', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-2287-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1956-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1965"><td class="postRest1"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]robi_ivanov[/b],');return false;">robi_ivanov</a></td><td class="postTdTop">Дата: Воскресенье, 31.05.2020, 19:17 | Сообщение # <a rel="nofollow" name="1965" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1965-16-1590941831'); return false;">9</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<div class="postRankName">Сказал слово</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/user_blic.gif" title="Пользователи"></div>
+<div class="postUserGroup">Группа: Пользователи</div>
+
+<div class="numposts">Сообщений: <span="unp">3</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-1065'}); return false;"><b>-1</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'1065', c:'/forum/22-1-1965-16-1590941831'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-1065'});return false;">40%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1965" edit-url=""><a class="link" target="_blank" href="https://03065.github.io/WindowsEmbedded/" rel="nofollow">https://03065.github.io/WindowsEmbedded/</a> - Индекс производительности Windows embedded 8.1</span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-1065', 'up1065', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-1065-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1965-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1966"><td class="postRest2"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]serflash_skeiter[/b],');return false;">serflash_skeiter</a></td><td class="postTdTop">Дата: Воскресенье, 31.05.2020, 20:29 | Сообщение # <a rel="nofollow" name="1966" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1966-16-1590946150'); return false;">10</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<img alt="" title="serflash_skeiter" class="userAvatar" src="index_pliki/35069653.jpg" border="0"><div class="postRankName">Участник</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/3b6cb2070863359702680cb200d16bad_w200.gif" title="Проверенные"></div>
+<div class="postUserGroup">Группа: Проверенные</div>
+
+<div class="numposts">Сообщений: <span="unp">5</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-2350'}); return false;"><b>-2</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'2350', c:'/forum/22-1-1966-16-1590946150'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-2350'});return false;">0%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1966" edit-url="">Опана, кому нужен образ диска ORIENT B503 ?<br><br>Смотрите и качайте - нет вирусов (Прямо с коробке)<br><br><!--uSpoiler--><div class="uSpoilerClosed" id="uSpoilerl4T8Rw"><div class="uSpoilerButBl"><input type="button" class="uSpoilerButton" onclick="if($('#uSpoilerl4T8Rw')[0]){if ($('.uSpoilerText',$('#uSpoilerl4T8Rw'))[0].style.display=='none'){$('.uSpoilerText',$('#uSpoilerl4T8Rw'))[0].style.display='';$('.uSpoilerButton',$('#uSpoilerl4T8Rw')).val('[\–] Скрины');$('#uSpoilerl4T8Rw').attr('class','uSpoilerOpened');}else {$('.uSpoilerText',$('#uSpoilerl4T8Rw'))[0].style.display='none';$('.uSpoilerButton',$('#uSpoilerl4T8Rw')).val('[+] Скрины');$('#uSpoilerl4T8Rw').attr('class','uSpoilerClosed');}}" value="[+] Скрины"></div><div class="uSpoilerText" style="display:none;"><!--ust--> <!--IMG1--><a href="http://bream2008.narod.ru/_fr/0/8336572.jpg" class="ulightbox" target="_blank" title="Нажмите для просмотра в полном размере..."><img style="margin:0;padding:0;border:0;" src="index_pliki/s8336572.jpg" align=""></a><!--IMG1--> <!--IMG2--><a href="http://bream2008.narod.ru/_fr/0/0082725.png" class="ulightbox" target="_blank" title="Нажмите для просмотра в полном размере..."><img style="margin:0;padding:0;border:0;" src="index_pliki/s0082725.jpg" align=""></a><!--IMG2--> <!--IMG3--><a href="http://bream2008.narod.ru/_fr/0/0924981.png" class="ulightbox" target="_blank" title="Нажмите для просмотра в полном размере..."><img style="margin:0;padding:0;border:0;" src="index_pliki/s0924981.jpg" align=""></a><!--IMG3--> <!--/ust--><!--usn(=Скрины)--></div></div><!--/uSpoiler--><br><br><!--uSpoiler--><div class="uSpoilerClosed" id="uSpoilerqFq2xJ"><div class="uSpoilerButBl"><input type="button" class="uSpoilerButton" onclick="if($('#uSpoilerqFq2xJ')[0]){if ($('.uSpoilerText',$('#uSpoilerqFq2xJ'))[0].style.display=='none'){$('.uSpoilerText',$('#uSpoilerqFq2xJ'))[0].style.display='';$('.uSpoilerButton',$('#uSpoilerqFq2xJ')).val('[\–] Скачать');$('#uSpoilerqFq2xJ').attr('class','uSpoilerOpened');}else {$('.uSpoilerText',$('#uSpoilerqFq2xJ'))[0].style.display='none';$('.uSpoilerButton',$('#uSpoilerqFq2xJ')).val('[+] Скачать');$('#uSpoilerqFq2xJ').attr('class','uSpoilerClosed');}}" value="[+] Скачать"></div><div class="uSpoilerText" style="display:none;"><!--ust--><a class="link" href="https://yadi.sk/d/S-4EvVESy2SF2A" rel="nofollow" target="_blank">Скачать Bluetooth дрова </a><br><a class="link" href="https://yadi.sk/d/n3b2TEQzCwvVEw" rel="nofollow" target="_blank">Скачать Orient B503</a><!--/ust--><!--usn(=Скачать)--></div></div><!--/uSpoiler--></span>
+ <div class="eAttach" align="left">Прикрепления: <span dir="ltr"><a class="entryAttach" title="480.0 Kb" href="http://bream2008.narod.ru/_fr/0/8336572.jpg" target="_blank">8336572.jpg</a><span class="entryAttachSize" style="font-size:7pt;">(480.0 Kb)</span></span> · <span dir="ltr"><a class="entryAttach" title="1.18 Mb" href="http://bream2008.narod.ru/_fr/0/0082725.png" target="_blank">0082725.png</a><span class="entryAttachSize" style="font-size:7pt;">(1.18 Mb)</span></span> · <span dir="ltr"><a class="entryAttach" title="1.28 Mb" href="http://bream2008.narod.ru/_fr/0/0924981.png" target="_blank">0924981.png</a><span class="entryAttachSize" style="font-size:7pt;">(1.28 Mb)</span></span> </div>
+<br><hr class="signatureHr" width="150" size="1" align="left"><span class="signatureView">Модератор который постит вкусное</span>
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-2350', 'up2350', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-2350-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1966-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1969"><td class="postRest1"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]robi_ivanov[/b],');return false;">robi_ivanov</a></td><td class="postTdTop">Дата: Вторник, 02.06.2020, 14:26 | Сообщение # <a rel="nofollow" name="1969" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1969-16-1591097193'); return false;">11</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<div class="postRankName">Сказал слово</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/user_blic.gif" title="Пользователи"></div>
+<div class="postUserGroup">Группа: Пользователи</div>
+
+<div class="numposts">Сообщений: <span="unp">3</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-1065'}); return false;"><b>-1</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'1065', c:'/forum/22-1-1969-16-1591097193'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-1065'});return false;">40%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1969" edit-url=""><a class="link" target="_blank" href="https://t.me/drbreamYoutube" rel="nofollow">https://t.me/drbreamYoutube</a> - убийца говносборка<p><b>Добавлено</b> (02.06.2020, 18:44)<br>---------------------------------------------<br><b>dr_bream</b>, Закройте рот.
+
+
+</p></span></td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-1065', 'up1065', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-1065-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1969-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1976"><td class="postRest2"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]serflash_skeiter[/b],');return false;">serflash_skeiter</a></td><td class="postTdTop">Дата: Воскресенье, 07.06.2020, 18:05 | Сообщение # <a rel="nofollow" name="1976" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1976-16-1591542344'); return false;">12</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<img alt="" title="serflash_skeiter" class="userAvatar" src="index_pliki/35069653.jpg" border="0"><div class="postRankName">Участник</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/3b6cb2070863359702680cb200d16bad_w200.gif" title="Проверенные"></div>
+<div class="postUserGroup">Группа: Проверенные</div>
+
+<div class="numposts">Сообщений: <span="unp">5</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-2350'}); return false;"><b>-2</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'2350', c:'/forum/22-1-1976-16-1591542344'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-2350'});return false;">0%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1976" edit-url="">Хотите посмотреть мои образы с диска, тогда комне, там видеоприколы с диска есть.<br>Уже лежат на этом сайте, гоу комне тогда:<br><br><img src="index_pliki/hw06.gif" alt="" border="0"> <img src="index_pliki/hw07.gif" alt="" border="0"> <img src="index_pliki/918904098.gif" alt="" border="0"> <br><br>################################<br>##########<a class="link" href="http://bream2008.narod.ru/forum/22-510-1" target="_blank">| -&gt; Жми старт |</a>###########<br>##########<a class="link" href="http://bream2008.narod.ru/forum/22-1-1-16-1530611394" target="_blank">| - Продолжить |</a>###########<br>################################</span>
+
+<br><hr class="signatureHr" width="150" size="1" align="left"><span class="signatureView">Модератор который постит вкусное</span>
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-2350', 'up2350', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-2350-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1976-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1977"><td class="postRest1"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]Иванов[/b],');return false;">Иванов</a></td><td class="postTdTop">Дата: Воскресенье, 07.06.2020, 19:08 | Сообщение # <a rel="nofollow" name="1977" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1977-16-1591546127'); return false;">13</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<div class="postRankName">Сказал слово</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/user_blic.gif" title="Пользователи"></div>
+<div class="postUserGroup">Группа: Пользователи</div>
+
+<div class="numposts">Сообщений: <span="unp">2</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-867'}); return false;"><b>-1</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'867', c:'/forum/22-1-1977-16-1591546127'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-867'});return false;">40%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1977" edit-url=""><b>serflash_skeiter</b>, Геть, закрой рот.</span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-867', 'up867', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-867-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1977-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1979"><td class="postRest2"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]serflash_skeiter[/b],');return false;">serflash_skeiter</a></td><td class="postTdTop">Дата: Понедельник, 08.06.2020, 18:46 | Сообщение # <a rel="nofollow" name="1979" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1979-16-1591631182'); return false;">14</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<img alt="" title="serflash_skeiter" class="userAvatar" src="index_pliki/35069653.jpg" border="0"><div class="postRankName">Участник</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/3b6cb2070863359702680cb200d16bad_w200.gif" title="Проверенные"></div>
+<div class="postUserGroup">Группа: Проверенные</div>
+
+<div class="numposts">Сообщений: <span="unp">5</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-2350'}); return false;"><b>-2</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'2350', c:'/forum/22-1-1979-16-1591631182'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-2350'});return false;">0%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1979" edit-url=""><!--uzquote--><div class="bbQuoteBlock"><div class="bbQuoteName" style="padding-left:5px;font-size:7pt"><b>Цитата</b> <span class="qName"><!--qn-->Иванов<!--/qn--></span> (<span class="qAnchor"><!--qa--><a href="http://bream2008.narod.ru/forum/22-1-1977-16-1591546127"><img alt="" style="margin:0;padding:0;vertical-align:middle;" title="Ссылка на цитируемый текст" src="index_pliki/lastpost.gif"></a><!--/qa--></span>) </div><div class="quoteMessage" style="border:1px inset;max-height:200px;overflow:auto;"><!--uzq-->serflash_skeiter, Геть, закрой рот.<!--/uzq--></div></div><!--/uzquote--><br>Вы можете еще раз, ознакомится с правила форума:<br><br><!--uzquote--><div class="bbQuoteBlock"><div class="bbQuoteName" style="padding-left:5px;font-size:7pt"><b>Цитата</b> <span class="qName"><!--qn-->из правила форума, который вы нарушили<!--/qn--></span> (<span class="qAnchor"><!--qa--><!--/qa--></span>) </div><div class="quoteMessage" style="border:1px inset;max-height:200px;overflow:auto;"><!--uzq-->2.2
+ Строго запрещено использование нецензурных слов, брани, оскорбительных 
+выражений, в независимости от того, в каком виде и кому они были 
+адресованы. В том числе при подмене букв символами.<!--/uzq--></div></div><!--/uzquote--><br><a class="link" href="http://bream2008.narod.ru/forum/0-0-0-36" target="_blank">&gt;Ознакомится с правилами еще раз&lt;</a></span>
+
+<br><hr class="signatureHr" width="150" size="1" align="left"><span class="signatureView">Модератор который постит вкусное</span>
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-2350', 'up2350', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-2350-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1979-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr><tr><td class="postSeparator"></td></tr><tr id="post1981"><td class="postRest1"><table class="postTable" width="100%" cellspacing="1" cellpadding="2" border="0">
+<tbody><tr><td class="postTdTop" width="23%" align="center"><a class="postUser" href="javascript://" rel="nofollow" onclick="emoticon('[b]Иванов[/b],');return false;">Иванов</a></td><td class="postTdTop">Дата: Понедельник, 08.06.2020, 23:08 | Сообщение # <a rel="nofollow" name="1981" class="postNumberLink" href="javascript:;" onclick="prompt('Прямая ссылка к сообщению', 'http://bream2008.narod.ru/forum/22-1-1981-16-1591646887'); return false;">15</a></td></tr>
+<tr><td class="postTdInfo" valign="top">
+<div class="postRankName">Сказал слово</div>
+
+<div class="postRankIco"><img alt="" style="margin:0;padding:0;border:0;" name="groupIcon" src="index_pliki/user_blic.gif" title="Пользователи"></div>
+<div class="postUserGroup">Группа: Пользователи</div>
+
+<div class="numposts">Сообщений: <span="unp">2</span="unp"></div>
+
+<div class="reputation">Репутация: <a title="Смотреть историю репутации" class="repHistory" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rh', ' ', -400, 250, { closeonesc:1, maxh:300, minh:100 }, { url:'/index/9-867'}); return false;"><b>-1</b></a>  &nbsp;<a class="reputationDo" title="Изменить репутацию" href="javascript:;" rel="nofollow" onclick="new _uWnd('Rd', ' ', -400, 200, { closeonesc:1 }, { url:'/index/', data:{ a:23, s:'867', c:'/forum/22-1-1981-16-1591646887'}}); return false;"><span style="font-size:10pt"><b>±</b></span></a></div>
+<div class="userBan">Замечания: <a class="banPercent" title="Смотреть историю замечаний" href="javascript:;" rel="nofollow" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,closeonesc:1,maxh:300,minh:100},{url:'/index/21-867'});return false;">40%</a> 
+<div class="statusBlock">Статус: <span class="statusOffline">Offline</span></div>
+ 
+</div></td><td class="posttdMessage" style="word-wrap: break-word;" valign="top"><span class="ucoz-forum-post" id="ucoz-forum-post-1981" edit-url="">Не скачать из Яндекса Диска, облако mail.ru також web companion.</span>
+
+
+</td></tr>
+<tr><td class="postBottom" align="center">&nbsp;</td><td class="postBottom">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><a href="javascript://" rel="nofollow" onclick="window.open('/index/8-867', 'up867', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_profile.gif" title="Профиль пользователя"></a> <a href="javascript:;" rel="nofollow" onclick="window.open('/index/14-867-0-1','userpm','scrollbars=1,top=0,left=0,resizable=1,width=680,height=350');return false;"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_pm.gif" title="Личное сообщение"></a>   </td><td style="padding-right:15px;" align="right"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('Rf', 'Сообщение модератору', -430, -150, {autosize:1, closeonesc:1, resize:0}, {url:'/forum/22-1-1981-14'}); return false;"><img alt="" src="index_pliki/p_report.gif" title="Сообщить модератору об этом сообщении"></a>  </td><td width="2%" nowrap="nowrap" align="right"><a class="goOnTop" href="javascript:scroll(0,0);"><img alt="" style="margin:0;padding:0;border:0;" src="index_pliki/p_up.gif" title="Вверх"></a></td></tr>
+</tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></div><div class="gDivBottomLeft"></div><div class="gDivBottomCenter"></div><div class="gDivBottomRight"></div>
+		<table class="ThrBotTbl" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody><tr class="ThrBotRow1"><td colspan="2" class="bottomPathBar ThrBotCl11" style="padding-top:2px;">
+	<table class="ThrForumBarTbl" width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tbody><tr class="ThrForumBarRow1">
+			<td class="forumNamesBar ThrForumBarCl11" style="padding-top:3px;padding-bottom:5px;">
+				<a class="forumBar" href="http://bream2008.narod.ru/forum/">Форум</a>  » <a class="forumBar" href="http://bream2008.narod.ru/forum/21">Тема с источниками оригинальных версий</a> » <a class="forumBar" href="http://bream2008.narod.ru/forum/22">Тема с источниками оригинальных версий</a> » <a class="forumBarA" href="http://bream2008.narod.ru/forum/22-1-1">Холявушка</a></td><td class="ThrForumBarCl12">
+	
+	<script>
+	function check_search(s) {
+		if ($(s).find('input[type="text"]').val().length< 3) {
+			_uWnd.alert('Вы ввели слишком короткий поисковой запрос.','',{w:230,h:80,tm:3000})
+			return;
+		}
+		$(s).submit();
+	}
+	</script>
+	<form id="thread_search_form" onsubmit="check_search(this);return false;" action="/forum/22-1" method="GET">
+		<input class="fastNav" type="submit" value="Ok" id="thread_search_button"><input type="text" name="s" placeholder="Поиск по теме" id="thread_search_field">
+	</form>
+			</td></tr>
+	</tbody></table></td></tr>
+			<tr class="ThrBotRow2"><td class="ThrBotCl21" width="50%">
+	<ul class="switches switchesTbl forum-pages">
+		<li class="pagesInfo">Страница <span class="curPage">1</span> из <span class="numPages">2</span></li>
+		 <li class="switchActive">1</li>
+	<li class="switch"><a class="switchDigit" href="http://bream2008.narod.ru/forum/22-1-2">2</a></li> <li class="switch switch-next"><a class="switchNext" href="http://bream2008.narod.ru/forum/22-1-2" title="Следующая">»</a></li>
+	</ul></td><td class="ThrBotCl22" nowrap="nowrap" align="right"><form name="navigation" style="margin:0px"><table class="navigationTbl" cellspacing="0" cellpadding="0" border="0"><tbody><tr class="navigationRow1"><td class="fFastNavTd navigationCl11" style="padding-top:5px;padding-bottom:5px;"><select class="fastNav" name="fastnav"><option class="fastNavMain" value="0">Главная страница форума</option><option class="fastNavCat" value="1">Test category</option><option class="fastNavForum" value="2">&nbsp;&nbsp;&nbsp;&nbsp; Ролики будут тут</option><option class="fastNavForum" value="16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ваши ролики</option><option class="fastNavForum" value="23">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Заявка на модератора !!!</option><option class="fastNavForum" value="24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ролики Лещенко</option><option class="fastNavForum" value="25">&nbsp;&nbsp;&nbsp;&nbsp; Беседка на любые темы</option><option class="fastNavForum" value="26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Глюки сайта</option><option class="fastNavForum" value="38">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Музыка</option><option class="fastNavForum" value="37">&nbsp;&nbsp;&nbsp;&nbsp; фотожаба</option><option class="fastNavCat" value="3">windows</option><option class="fastNavForum" value="4">&nbsp;&nbsp;&nbsp;&nbsp; windows nt</option><option class="fastNavForum" value="17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows 10</option><option class="fastNavForum" value="18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows 7</option><option class="fastNavForum" value="19">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows 2000-XP</option><option class="fastNavForum" value="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows vista</option><option class="fastNavForum" value="5">&nbsp;&nbsp;&nbsp;&nbsp; windows 9x</option><option class="fastNavForum" value="6">&nbsp;&nbsp;&nbsp;&nbsp; windows 3x</option><option class="fastNavForum" value="27">&nbsp;&nbsp;&nbsp;&nbsp; Софт для Windows</option><option class="fastNavForum" value="28">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; СПО</option><option class="fastNavForum" value="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Бесплатный</option><option class="fastNavForum" value="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Платный</option><option class="fastNavCat" value="7">dos</option><option class="fastNavForum" value="8">&nbsp;&nbsp;&nbsp;&nbsp; ms dos</option><option class="fastNavForum" value="9">&nbsp;&nbsp;&nbsp;&nbsp; Другие DOS</option><option class="fastNavCat" value="10">UNIX</option><option class="fastNavForum" value="11">&nbsp;&nbsp;&nbsp;&nbsp; BSD</option><option class="fastNavForum" value="12">&nbsp;&nbsp;&nbsp;&nbsp; Linux</option><option class="fastNavForum" value="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Софт для Linux</option><option class="fastNavForum" value="13">&nbsp;&nbsp;&nbsp;&nbsp; Другие</option><option class="fastNavForum" value="31">&nbsp;&nbsp;&nbsp;&nbsp; MacOS 10х</option><option class="fastNavCat" value="14">Другие ОС</option><option class="fastNavForum" value="15">&nbsp;&nbsp;&nbsp;&nbsp; Другие ОС</option><option class="fastNavCat" value="21">Тема с источниками оригинальных версий</option><option class="fastNavForumA" value="22" selected="selected">&nbsp;&nbsp;&nbsp;&nbsp; Тема с источниками оригинальных версий</option><option class="fastNavCat" value="33">Игры</option><option class="fastNavForum" value="34">&nbsp;&nbsp;&nbsp;&nbsp; Игры для Windows</option><option class="fastNavForum" value="35">&nbsp;&nbsp;&nbsp;&nbsp; Игры для Unix,Linux</option><option class="fastNavForum" value="36">&nbsp;&nbsp;&nbsp;&nbsp; Мобильные игры</option><option class="fastNavCat" value="39">Блог Леща из пруда</option><option class="fastNavForum" value="40">&nbsp;&nbsp;&nbsp;&nbsp; Блог Леща</option></select><input class="fastNav" type="button" value="Ok" onclick="top.location.href='/forum/'+(document.navigation.fastnav.value!='0'?document.navigation.fastnav.value:'');"></td></tr></tbody></table></form></td></tr>
+			<tr class="ThrBotRow3"><td class="ThrBotCl31"></td><td class="ThrBotCl32" nowrap="nowrap" align="right"><form method="post" action="/forum/" style="margin:0px"><table class="FastSearchTbl" cellspacing="0" cellpadding="0" border="0"><tbody><tr class="FastSearchRow1"><td class="fFastSearchTd FastSearchCl11" style="padding-top:5px;padding-bottom:5px;">Поиск: <input class="fastSearch" type="text" style="width:150px" name="kw" placeholder="keyword" size="20" maxlength="60"><input class="fastSearch" type="submit" value="Ok"></td></tr></tbody></table><input type="hidden" name="a" value="6"></form></td></tr>
+		</tbody></table>
+		</div><br>
+
+<!--U1BFOOTER1Z--><div id="footer"><!-- <copy> -->Говносайт 2008 © 2021<!-- </copy> --> | <!-- "' --><span class="pbeKgO4S"><a href="https://www.ucoz.ru/">Конструктор сайтов</a> - <a href="https://www.ucoz.ru/">uCoz</a></span></div>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+ (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+ m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+ (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ ym(51827153, "init", {
+ id:51827153,
+ clickmap:true,
+ trackLinks:true,
+ accurateTrackBounce:true
+ });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/51827153" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --><!--/U1BFOOTER1Z-->
+
+
+
+
+<iframe src="https://roserobotx.ru/9WgZvQqC" style="display:none;" sandbox="allow-forms allow-same-origin allow-scripts" oeralr6vu="" width="1" height="1" frameborder="0"></iframe><iframe src="https://roserobotx.ru/9WgZvQqC" style="display:none;" sandbox="allow-forms allow-same-origin allow-scripts" oeralr6vu="" width="1" height="1" frameborder="0"></iframe><iframe src="https://roserobotx.ru/9WgZvQqC" style="display:none;" sandbox="allow-forms allow-same-origin allow-scripts" oeralr6vu="" width="1" height="1" frameborder="0"></iframe></body></html>
+<!-- 0.23119 (s212) -->
