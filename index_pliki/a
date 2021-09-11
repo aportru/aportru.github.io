@@ -1,0 +1,4 @@
+(function () {
+	var pars = [0,'Что бы выключить рекламу включите Adblock','FFFFFF','000000','12','30','left'];
+	if (pars[1]) document.write('<div style=\'background:#' + pars[3] + '; line-height:' + pars[5] + 'px; font-size:' + pars[4] + 'px; color:#' + pars[2] + ';\'><marquee direction=\'' + pars[6] + '\' height=\'' + pars[5] + '\'>' + pars[1] + '</marquee></div>');
+})();
